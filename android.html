@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Android · Sutra Tutorials</title>
+<meta name="description" content="One IDE for SwiftUI, Jetpack Compose, Flutter and Compose Multiplatform">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav" aria-label="Platforms">
+  <a class="brand" href="index.html"><span class="logo" aria-hidden="true"></span>Sutra <span>Tutorials</span></a>
+  <div class="links"><a href="ios.html">iOS</a><a href="android.html" aria-current="page">Android</a><a href="flutter.html">Flutter</a><a href="multiplatform.html">Compose Multiplatform</a><a href="cross-platform.html">Across platforms and AI</a></div>
+</nav>
+<main>
+<header class="hero small">
+  <p class="eyebrow">Kotlin and Jetpack Compose</p>
+  <h1>Android</h1>
+  <p>Compose previews (approximate and on a real device), running on phones and emulators, Kotlin playgrounds, and a stability check for recomposition.</p>
+</header>
+<div class="layout">
+  <aside class="toc" aria-label="On this page"><ol><li><a href="#compose-preview">Jetpack Compose preview</a></li><li><a href="#android-run">Run on phones and emulators</a></li><li><a href="#compose-stability">Compose stability check</a></li><li><a href="#kotlin-playground">Kotlin playgrounds</a></li></ol></aside>
+  <div class="features">
+    <article class="feature" id="compose-preview">
+      <h2><a href="#compose-preview">Jetpack Compose preview</a></h2>
+      <p class="summary">Preview @Preview functions and Activities as you type, on phones, tablets, foldables and dual-screen devices, or render them on a real device.</p>
+      <figure class="video">
+  <video controls muted playsinline preload="none" poster="media/compose-preview.png" aria-label="Jetpack Compose preview demo">
+    <source src="media/compose-preview.webm" type="video/webm">
+    <a href="media/compose-preview.webm">Download the Jetpack Compose preview video</a>
+  </video>
+</figure>
+      <h3>Try it</h3>
+      <ol class="steps"><li>Open a Kotlin file with composables and press Preview.</li><li>Pick the composable and the device; foldables show their crease, dual screens their hinge.</li><li>Click an element to select its code.</li><li>On device builds the app and shows the real composable from your phone or emulator.</li></ol>
+    </article>
+    <article class="feature" id="android-run">
+      <h2><a href="#android-run">Run on phones and emulators</a></h2>
+      <p class="summary">Pick a connected phone or a running emulator and run the app; Devices &amp; Tools starts emulators and checks the SDK.</p>
+      <figure class="video">
+  <video controls muted playsinline preload="none" poster="media/android-run.png" aria-label="Run on phones and emulators demo">
+    <source src="media/android-run.webm" type="video/webm">
+    <a href="media/android-run.webm">Download the Run on phones and emulators video</a>
+  </video>
+</figure>
+      <h3>Try it</h3>
+      <ol class="steps"><li>Pick a device in the run bar.</li><li>Devices &amp; Tools lists emulator images to start, and the Android SDK and JDK Sutra found.</li><li>Run builds, installs and launches the app; the build's output streams into the Output panel.</li></ol>
+    </article>
+    <article class="feature" id="compose-stability">
+      <h2><a href="#compose-stability">Compose stability check</a></h2>
+      <p class="summary">Find composables that recompose more than they need to, the unstable classes behind them, and how to fix them, from the Compose compiler's own reports.</p>
+      <figure class="video">
+  <video controls muted playsinline preload="none" poster="media/compose-stability.png" aria-label="Compose stability check demo">
+    <source src="media/compose-stability.webm" type="video/webm">
+    <a href="media/compose-stability.webm">Download the Compose stability check video</a>
+  </video>
+</figure>
+      <h3>Try it</h3>
+      <ol class="steps"><li>Run › Check Compose Stability compiles the app module once with the compiler's reports on. Your build files don't change.</li><li>Findings list unstable parameters and classes, with fixes such as ImmutableList or @Immutable.</li><li>The editor labels each composable: skips, skips by identity, or can't skip.</li></ol>
+    </article>
+    <article class="feature" id="kotlin-playground">
+      <h2><a href="#kotlin-playground">Kotlin playgrounds</a></h2>
+      <p class="summary">Kotlin scripts with each line's value beside it, run on the JVM as you type.</p>
+      <figure class="video">
+  <video controls muted playsinline preload="none" poster="media/kotlin-playground.png" aria-label="Kotlin playgrounds demo">
+    <source src="media/kotlin-playground.webm" type="video/webm">
+    <a href="media/kotlin-playground.webm">Download the Kotlin playgrounds video</a>
+  </video>
+</figure>
+      <h3>Try it</h3>
+      <ol class="steps"><li>File › New Kotlin Playground creates a .playground.kts file.</li><li>Type: it runs again and shows each value beside its line.</li></ol>
+    </article>
+  </div>
+</div>
+</main>
+<footer class="foot"><p>The videos show Sutra with sample projects. Builds, devices and AI replies in them are simulated, so they always look the same; on your Mac they're real.</p></footer>
+</body>
+</html>

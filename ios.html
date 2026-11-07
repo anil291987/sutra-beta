@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iOS · Sutra Tutorials</title>
+<meta name="description" content="One IDE for SwiftUI, Jetpack Compose, Flutter and Compose Multiplatform">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav" aria-label="Platforms">
+  <a class="brand" href="index.html"><span class="logo" aria-hidden="true"></span>Sutra <span>Tutorials</span></a>
+  <div class="links"><a href="ios.html" aria-current="page">iOS</a><a href="android.html">Android</a><a href="flutter.html">Flutter</a><a href="multiplatform.html">Compose Multiplatform</a><a href="cross-platform.html">Across platforms and AI</a></div>
+</nav>
+<main>
+<header class="hero small">
+  <p class="eyebrow">Swift and SwiftUI</p>
+  <h1>iOS</h1>
+  <p>Live SwiftUI previews, playgrounds, building to an iPhone with xtool (no Xcode needed), and help with signing and App Store uploads.</p>
+</header>
+<div class="layout">
+  <aside class="toc" aria-label="On this page"><ol><li><a href="#swiftui-preview">SwiftUI live preview</a></li><li><a href="#swift-playground">Swift playgrounds</a></li><li><a href="#xtool-devices">Run on iPhone with xtool</a></li><li><a href="#signing-doctor">Signing Doctor</a></li><li><a href="#app-store-check">App Store readiness</a></li><li><a href="#xcode-debugging">Debug Xcode projects</a></li><li><a href="#xcode-signing">Signing for Xcode projects</a></li></ol></aside>
+  <div class="features">
+    <article class="feature" id="swiftui-preview">
+      <h2><a href="#swiftui-preview">SwiftUI live preview</a></h2>
+      <p class="summary">See a view beside its code as you type. Click an element in the preview to select its code, and ask AI to change just that element.</p>
+      <figure class="video">
+  <video controls muted playsinline preload="none" poster="media/swiftui-preview.png" aria-label="SwiftUI live preview demo">
+    <source src="media/swiftui-preview.webm" type="video/webm">
+    <a href="media/swiftui-preview.webm">Download the SwiftUI live preview video</a>
+  </video>
+</figure>
+      <h3>Try it</h3>
+      <ol class="steps"><li>Open a SwiftUI file and press Preview in the editor's toolbar.</li><li>Pick the view and the device at the top of the pane; Real (macOS) renders it with the real SwiftUI.</li><li>Click an element in the preview: its code is selected in the editor.</li><li>Describe a change in the box under the preview. The edit opens as a diff with before and after renders.</li></ol>
+    </article>
+    <article class="feature" id="swift-playground">
+      <h2><a href="#swift-playground">Swift playgrounds</a></h2>
+      <p class="summary">Xcode-compatible .playground files, with each line's value beside it and print() output in a console.</p>
+      <figure class="video">
+  <video controls muted playsinline preload="none" poster="media/swift-playground.png" aria-label="Swift playgrounds demo">
+    <source src="media/swift-playground.webm" type="video/webm">
+    <a href="media/swift-playground.webm">Download the Swift playgrounds video</a>
+  </video>
+</figure>
+      <h3>Try it</h3>
+      <ol class="steps"><li>Open a .playground (or File › New Swift Playground).</li><li>It runs as you type; hover a value to see every time a loop produced it.</li><li>Compile errors show on their line; pages that import UIKit run in the iOS Simulator.</li></ol>
+    </article>
+    <article class="feature" id="xtool-devices">
+      <h2><a href="#xtool-devices">Run on iPhone with xtool</a></h2>
+      <p class="summary">Build, sign and install SwiftPM apps on a connected iPhone with xtool, on macOS, Linux or Windows (WSL). A free Apple ID works.</p>
+      <figure class="video">
+  <video controls muted playsinline preload="none" poster="media/xtool-devices.png" aria-label="Run on iPhone with xtool demo">
+    <source src="media/xtool-devices.webm" type="video/webm">
+    <a href="media/xtool-devices.webm">Download the Run on iPhone with xtool video</a>
+  </video>
+</figure>
+      <h3>Try it</h3>
+      <ol class="steps"><li>Open Devices &amp; Tools: connect an iPhone, sign in to your Apple account, and install the Darwin SDK.</li><li>The Signing card shows your team, whether it's a free account, and how long the app's profile has left.</li><li>Press Run: Sutra builds, signs and installs the app on the iPhone.</li></ol>
+    </article>
+    <article class="feature" id="signing-doctor">
+      <h2><a href="#signing-doctor">Signing Doctor</a></h2>
+      <p class="summary">When an iPhone run fails to sign, install or launch, Sutra says why in plain words and offers the fix.</p>
+      <figure class="video">
+  <video controls muted playsinline preload="none" poster="media/signing-doctor.png" aria-label="Signing Doctor demo">
+    <source src="media/signing-doctor.webm" type="video/webm">
+    <a href="media/signing-doctor.webm">Download the Signing Doctor video</a>
+  </video>
+</figure>
+      <h3>Try it</h3>
+      <ol class="steps"><li>Run the app. If it fails on signing, a report opens above the Output.</li><li>Each finding explains the problem, lists the steps, and shows the output line it's based on.</li><li>Press its button to fix it: sign in, run again, or open the right file.</li><li>Tools › Check iOS Signing checks the project at any time.</li></ol>
+    </article>
+    <article class="feature" id="app-store-check">
+      <h2><a href="#app-store-check">App Store readiness</a></h2>
+      <p class="summary">Find what App Store Connect or App Review would reject before you upload: missing purpose strings, the privacy manifest, export compliance.</p>
+      <figure class="video">
+  <video controls muted playsinline preload="none" poster="media/app-store-check.png" aria-label="App Store readiness demo">
+    <source src="media/app-store-check.webm" type="video/webm">
+    <a href="media/app-store-check.webm">Download the App Store readiness video</a>
+  </video>
+</figure>
+      <h3>Try it</h3>
+      <ol class="steps"><li>Run Tools › Check App Store Readiness (or App Store Check on the Signing card).</li><li>Each finding shows the lines of code it's based on; click one to open it.</li><li>Create Privacy Manifest… writes a draft declaring the API categories your app uses. You pick the reasons.</li></ol>
+    </article>
+    <article class="feature" id="xcode-debugging">
+      <h2><a href="#xcode-debugging">Debug Xcode projects</a></h2>
+      <p class="summary">Breakpoints, stepping, variables and a console for Swift apps in Xcode projects, on the iOS Simulator or as Mac apps.</p>
+      <figure class="video">
+  <video controls muted playsinline preload="none" poster="media/xcode-debugging.png" aria-label="Debug Xcode projects demo">
+    <source src="media/xcode-debugging.webm" type="video/webm">
+    <a href="media/xcode-debugging.webm">Download the Debug Xcode projects video</a>
+  </video>
+</figure>
+      <h3>Try it</h3>
+      <ol class="steps"><li>Open an Xcode project and click the margin to set a breakpoint.</li><li>Press Debug: Sutra builds, launches and attaches lldb.</li><li>When it stops, read the call stack and variables, and evaluate expressions in the console.</li></ol>
+    </article>
+    <article class="feature" id="xcode-signing">
+      <h2><a href="#xcode-signing">Signing for Xcode projects</a></h2>
+      <p class="summary">Check an Xcode project's signing for iPhone builds and archives: teams, profiles, certificates and entitlements.</p>
+      <figure class="video">
+  <video controls muted playsinline preload="none" poster="media/xcode-signing.png" aria-label="Signing for Xcode projects demo">
+    <source src="media/xcode-signing.webm" type="video/webm">
+    <a href="media/xcode-signing.webm">Download the Signing for Xcode projects video</a>
+  </video>
+</figure>
+      <h3>Try it</h3>
+      <ol class="steps"><li>Open Devices &amp; Tools: the Signing card lists each app target's team, signing style and profile.</li><li>Check Signing finds what would fail, from free-team limits to expired certificates.</li></ol>
+    </article>
+  </div>
+</div>
+</main>
+<footer class="foot"><p>The videos show Sutra with sample projects. Builds, devices and AI replies in them are simulated, so they always look the same; on your Mac they're real.</p></footer>
+</body>
+</html>
